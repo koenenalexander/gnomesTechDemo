@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8737E36D-D681-E4E3-668F-2441B27DFC66}</ProjectGuid>
+	<ProjectGuid>{EF16B869-19BE-BA99-B148-D1F661A14130}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,10 +50,10 @@
      <Compile Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" />
      <Compile Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\DragRigidbody.js" />
+     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\PlayerMove.js" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\gnomeSpawn.js" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\limitedLifetime.js" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\updateScore.js" />
-     <Compile Include="Assets\Standard Assets\Scripts\PlayerMove.js" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />

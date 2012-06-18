@@ -1,5 +1,5 @@
 #pragma strict
-var numberOfGnomes : int = 1.0;
+var numberOfGnomes : int = 1;
 var gnomePrefab : Transform;
 
 function Start () {
@@ -11,7 +11,8 @@ function Start () {
 	for (i = 0; i < numberOfGnomes; i++) {
 		var randomX = Random.Range(0,xRange);
 		var randomZ = Random.Range(0, zRange);
-		var firstGnome = Instantiate(gnomePrefab, Vector3(randomX, 1, randomZ), Quaternion.identity);
+		var gnome = Instantiate(gnomePrefab, Vector3(randomX, 1, randomZ), Quaternion.identity);
+		gnome.rigidbody.AddForce(transform.forward * 50);
 	}
 	
 }
