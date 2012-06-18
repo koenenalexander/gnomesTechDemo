@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\General Scripts\gnomeSpawn.js">
+    <Files>
+      <File FileName="Assets\Standard Assets\Scripts\AIs\gnomeAI.js" Line="4" Column="23" />
+      <File FileName="Assets\Standard Assets\Scripts\General Scripts\gnomeSpawn.js" Line="15" Column="49" />
+      <File FileName="Assets\Standard Assets\Scripts\General Scripts\PlayerMove.js" Line="39" Column="55" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
