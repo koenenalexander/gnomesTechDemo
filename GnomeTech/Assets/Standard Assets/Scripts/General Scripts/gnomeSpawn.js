@@ -11,8 +11,7 @@ function Start () {
 	for (i = 0; i < numberOfGnomes; i++) {
 		var randomX = Random.Range(0,xRange);
 		var randomZ = Random.Range(0, zRange);
-		var gnome = Instantiate(gnomePrefab, Vector3(randomX, 1, randomZ), Quaternion.identity);
-		gnome.rigidbody.AddForce(transform.forward * 50);
+		var gnome = Instantiate(gnomePrefab, Vector3(randomX, 1.5, randomZ), Quaternion.identity);
 	}
 	
 }

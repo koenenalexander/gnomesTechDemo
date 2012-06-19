@@ -1,21 +1,24 @@
 #pragma strict
 
 var lookAtTarget : Transform;
-var runningSpeed = 1.5;
+var velocityVector : Vector3;
+var runningSpeed = 10;
 private var alerted = false;
 
+
 function OnTriggerEnter(hit : Collider) {
-	if(hit.isTrigger) {
+
+	//the player is close enough to affect the gnome
+	if(hit.tag == "playerInfluence") {
 		alerted = true;
-		var rotate = Quaternion.LookRotation(lookAtTarget.position - transform.position);
-		gameObject.rigidbody.AddForce(gameObject.transform.forward * runningSpeed);
+		lookAtTarget = hit.transform.parent; //target the player
 	}
 }
 
 function OnTriggerExit(hit : Collider) {
-	if(hit.isTrigger) {
+	// if the gnome gets too far away, stop running
+	if(hit.tag == "playerInfluence") { 
 		alerted = false;
-		gameObject.rigidbody.velocity.Set(0,0,0);
 	}
 }
 
@@ -25,9 +28,9 @@ function Start () {
 
 function Update () {
 
-	if (true) {
-		transform.LookAt(lookAtTarget);
-		transform.rigidbody.MovePosition(lookAtTarget.position);
-		gameObject.rigidbody.AddForce(gameObject.transform.forward * runningSpeed);
+	if (alerted) {
+		transform.LookAt(lookAtTarget); // looks at the player
+		transform.Rotate(Vector3(0,180,0)); //turns away from the player
+		transform.Translate(Vector3.forward * runningSpeed * Time.deltaTime); //runs away
 	}
 }
